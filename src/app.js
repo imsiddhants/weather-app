@@ -7,15 +7,15 @@ const { error } = require('console')
 
 
 console.log(__dirname)
-console.log(path.join(__dirname),'../public')
+console.log(path.join(__dirname),'../Public')
 
 
 const app=express()
 
 //define paths to express config
-const publicDirPath='../public'
-const viewsPath=path.join(__dirname,'../templates/views')
-const partialsPath=path.join(__dirname,'../templates/partials')
+const publicDirPath=path.join(__dirname,'../Public')
+const viewsPath=path.join(__dirname,'../Public/templates/views')
+const partialsPath=path.join(__dirname,'../Public/templates/partials')
 
 //setup handlebars engine and views location
 app.set('view engine','hbs')
